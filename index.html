@@ -1,0 +1,101 @@
+﻿<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="qalynmalcalculator.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Qalyn mal calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="func.js"></script>
+
+</head>
+
+    <body>
+
+        <div class="jumbotron">
+            <h1>Qalyn mal calculator</h1>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+
+                        <form onsubmit="calculate()" method="post">
+
+                            <p>Bride's/Groom's name:</p>
+                            <p>
+                                <input id="name" type="text">
+                            </p>
+                                <hr class="hr">
+                            <p>Starting bid</p>
+                            <p>
+                                <input type="number" class="cost" id="cost">
+                            </p>
+                                <hr class="hr">
+                            <p>Bride's/Groom's education:</p>
+                            <p>
+                                <select id="education">
+                                    <option disabled selected value="0">select</option>
+                                    <option value="1.5">Undergraduate degree</option>
+                                    <option value="1.2">College degree</option>
+                                    <option value="1.05">High school degree</option>
+                                    <option value="0.9">Middle school degree</option>
+                                </select>
+                            </p>
+                                <hr class="hr">
+                            <p>Bride's/Groom's family net worth:</p>
+                            <p>
+                                <select id="networth">
+                                    <option disabled selected value="0">select</option>
+                                    <option value="2">More than 100,000$</option>
+                                    <option value="1.5">Between 50,000$ and 100,000$</option>
+                                    <option value="1.2">Less than 50,000$</option>
+                                </select>
+                            </p>
+                                <hr class="hr">
+                            <p>Bride's/Groom's skills:</p>
+                            <p>
+                                <input type="checkbox" value="100" class="skills"> Playing on dombra<br>
+                                <input type="checkbox" value="200" class="skills"> Good cook<br>
+                                <input type="checkbox" value="150" class="skills"> Easygoing character<br>
+                                <input type="checkbox" value="100" class="skills"> Sings well<br>
+                            </p>
+                                <hr class="hr">
+                            <p>Bride's/Groom's age:</p>
+                            <p>
+                                <input id="age" type="radio" value="1.5">Between 18-23<br>
+                                <input id="age" type="radio" value="1.2">Between 24-27<br>
+                                <input id="age" type="radio" value="0.95">28+<br>
+                            </p>
+                                <hr class="hr">
+                            <p>Bride's/Groom's reputation:</p>
+                            <p>
+                                <input type="checkbox" value="0.85" class="reputation"> Gossips about his/her parent's attitude<br>
+                                <input type="checkbox" value="0.9" class="reputation"> Gossips about his/her character<br>
+                                <input type="checkbox" value="-200" class="reputation"> General gossips around his/her person<br>
+                            </p>
+                                <hr class="hr">
+                            <p>Love letter:</p>
+                            <p>
+                                <textarea rows="5" cols="25" name="text" maxlength="500" id="text"></textarea>
+                            </p>
+
+                                <button class="btn" type="submit"><b>Calculate</b></button>
+
+                            <p id="result"></p>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+    </body>
+
+</html>
